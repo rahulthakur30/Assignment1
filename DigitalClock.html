@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            Digital Clock
+        </title>
+        <link rel="stylesheet" href="DigitalClock.css">
+
+    </head>
+
+    <body>
+        <div class="main-container">
+        </div>
+        <h1 id="dc">Digital Clock</h1>
+        <div id="div1">
+            <p id="clock"></p>
+            <p id="clock2"></p>
+            <p id="date"></p>
+            <p id="day"> </p>
+        </div>
+        <button id="ToAnalog" onclick="window.location.href='AnalogClock.html'">Show Analog Clock</button>
+        <button id="Format2" onclick="Toggle()">Show 12Hr Format </button>
+        <br>
+            <div id="div1">
+                <h3>Set Alarm Time</h3>
+                    <label>
+                        <div>
+                        <select id='alarmhrs' ></select>
+                        <!-- </div> -->
+                    <!-- </label>
+                    <label>
+                        <div> -->
+                        <select id='alarmmins' ></select>
+                        <!-- </div>
+                    </label>
+                    <label>
+                        <div> -->
+                        <select id='alarmsecs' ></select>
+                        <!-- </div>
+                     </label>
+                    <label> -->
+                        <!-- <div> --> 
+                            <select id="ampm">
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                            </select>
+                        <!-- </div> -->
+                    <!-- </label>
+                    </div> -->
+            </div>
+            <div id='buttonHolder'>
+                <div>
+                    <button  id='setButton' class="btn" onClick='setAlarm()'>Set Alarm</button>
+                </div>
+                <div>
+                    <button  id='clearButton' class="btn alarm-btn" onClick='alarmClear()'>Clear Alarm</button>
+                </div>
+            </div>
+            <script src="DigitalClock.js"></script>
+    </body>
+</html>
